@@ -1,0 +1,38 @@
+<svg width="560" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">错误处理：值 vs 异常</text>
+  <line x1="280" y1="42" x2="280" y2="380" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="140" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#E76F00">Java 异常</text>
+  <rect x="70" y="80" width="140" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="100" text-anchor="middle" font-size="11" fill="#333">Controller</text>
+  <line x1="140" y1="112" x2="140" y2="128" stroke="#D32F2F" stroke-width="2" marker-end="url(#ea1)"/>
+  <rect x="70" y="130" width="140" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="150" text-anchor="middle" font-size="11" fill="#333">Service</text>
+  <line x1="140" y1="162" x2="140" y2="178" stroke="#D32F2F" stroke-width="2" marker-end="url(#ea1)"/>
+  <rect x="70" y="180" width="140" height="32" fill="#FFE0B2" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="140" y="200" text-anchor="middle" font-size="11" fill="#D32F2F">DAO: throw ⚡</text>
+  <line x1="140" y1="212" x2="140" y2="228" stroke="#D32F2F" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#ea1)"/>
+  <text x="140" y="250" text-anchor="middle" font-size="10" fill="#D32F2F">↑ 异常自动传播</text>
+  <text x="140" y="270" text-anchor="middle" font-size="11" fill="#666">直到被catch</text>
+  <text x="140" y="320" text-anchor="middle" font-size="11" fill="#D32F2F">✗ 可能被吞掉</text>
+  <text x="420" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#00ADD8">Go Error</text>
+  <rect x="350" y="80" width="140" height="32" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="420" y="100" text-anchor="middle" font-size="11" fill="#333">Handler</text>
+  <rect x="350" y="115" width="140" height="20" fill="#B2EBF2" rx="3"/>
+  <text x="420" y="129" text-anchor="middle" font-size="9" fill="#00ADD8">if err != nil</text>
+  <line x1="420" y1="135" x2="420" y2="148" stroke="#00ADD8" stroke-width="1.5" marker-end="url(#ea2)"/>
+  <rect x="350" y="150" width="140" height="32" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="420" y="170" text-anchor="middle" font-size="11" fill="#333">Service</text>
+  <rect x="350" y="185" width="140" height="20" fill="#B2EBF2" rx="3"/>
+  <text x="420" y="199" text-anchor="middle" font-size="9" fill="#00ADD8">if err != nil</text>
+  <line x1="420" y1="205" x2="420" y2="218" stroke="#00ADD8" stroke-width="1.5" marker-end="url(#ea2)"/>
+  <rect x="350" y="220" width="140" height="32" fill="#80DEEA" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="420" y="240" text-anchor="middle" font-size="11" fill="#333">Repository: return err</text>
+  <text x="420" y="270" text-anchor="middle" font-size="10" fill="#00ADD8">↑ 每层显式检查</text>
+  <text x="420" y="290" text-anchor="middle" font-size="11" fill="#666">显式返回</text>
+  <text x="420" y="320" text-anchor="middle" font-size="11" fill="#00ADD8">✓ 不会被吞掉</text>
+  <defs>
+    <marker id="ea1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#D32F2F"/></marker>
+    <marker id="ea2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#00ADD8"/></marker>
+  </defs>
+</svg>

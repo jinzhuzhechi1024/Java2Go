@@ -1,0 +1,35 @@
+<svg width="560" height="360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="360" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">配置模式：函数选项 vs Builder</text>
+  <line x1="280" y1="42" x2="280" y2="340" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="140" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#E76F00">Java Builder</text>
+  <rect x="60" y="75" width="160" height="28" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="93" text-anchor="middle" font-size="10" fill="#333">Server.builder()</text>
+  <line x1="140" y1="103" x2="140" y2="118" stroke="#E76F00" stroke-width="1.5" marker-end="url(#fa1)"/>
+  <rect x="60" y="120" width="160" height="28" fill="#FFE0B2" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="138" text-anchor="middle" font-size="10" fill="#333">.port(8080)</text>
+  <line x1="140" y1="148" x2="140" y2="163" stroke="#E76F00" stroke-width="1.5" marker-end="url(#fa1)"/>
+  <rect x="60" y="165" width="160" height="28" fill="#FFE0B2" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="183" text-anchor="middle" font-size="10" fill="#333">.timeout(30)</text>
+  <line x1="140" y1="193" x2="140" y2="208" stroke="#E76F00" stroke-width="1.5" marker-end="url(#fa1)"/>
+  <rect x="60" y="210" width="160" height="28" fill="#FFCC80" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="228" text-anchor="middle" font-size="10" fill="#333">.build()</text>
+  <text x="140" y="270" text-anchor="middle" font-size="11" fill="#666">链式调用</text>
+  <text x="140" y="290" text-anchor="middle" font-size="11" fill="#666">生成器模式</text>
+  <text x="420" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#00ADD8">Go 函数选项</text>
+  <rect x="330" y="75" width="160" height="28" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="410" y="93" text-anchor="middle" font-size="10" fill="#333">NewServer(host, port,</text>
+  <rect x="330" y="120" width="100" height="28" fill="#B2EBF2" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="380" y="138" text-anchor="middle" font-size="9" fill="#333">WithTLS(cfg)</text>
+  <rect x="440" y="120" width="100" height="28" fill="#B2EBF2" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="490" y="138" text-anchor="middle" font-size="9" fill="#333">WithTimeout(30)</text>
+  <rect x="330" y="165" width="100" height="28" fill="#B2EBF2" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="380" y="183" text-anchor="middle" font-size="9" fill="#333">WithLogger(log)</text>
+  <rect x="330" y="210" width="160" height="28" fill="#80DEEA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="410" y="228" text-anchor="middle" font-size="10" fill="#333">)</text>
+  <text x="420" y="270" text-anchor="middle" font-size="11" fill="#666">函数选项</text>
+  <text x="420" y="290" text-anchor="middle" font-size="11" fill="#666">灵活组合</text>
+  <defs>
+    <marker id="fa1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#E76F00"/></marker>
+  </defs>
+</svg>

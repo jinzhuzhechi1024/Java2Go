@@ -1,0 +1,30 @@
+<svg width="560" height="360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="360" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">性能优化四步法</text>
+  <rect x="30" y="60" width="110" height="80" fill="#E3F2FD" stroke="#333" stroke-width="1.5" rx="6"/>
+  <text x="85" y="82" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">1. 发现</text>
+  <text x="85" y="100" text-anchor="middle" font-size="10" fill="#666">pprof profile</text>
+  <text x="85" y="115" text-anchor="middle" font-size="10" fill="#666">火焰图找宽块</text>
+  <line x1="140" y1="100" x2="165" y2="100" stroke="#999" stroke-width="2" marker-end="url(#of1)"/>
+  <rect x="170" y="60" width="110" height="80" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="225" y="82" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">2. 定位</text>
+  <text x="225" y="100" text-anchor="middle" font-size="10" fill="#666">逃逸分析</text>
+  <text x="225" y="115" text-anchor="middle" font-size="10" fill="#666">block profile</text>
+  <line x1="280" y1="100" x2="305" y2="100" stroke="#999" stroke-width="2" marker-end="url(#of1)"/>
+  <rect x="310" y="60" width="110" height="80" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="6"/>
+  <text x="365" y="82" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">3. 优化</text>
+  <text x="365" y="100" text-anchor="middle" font-size="9" fill="#666">sync.Pool/预分配</text>
+  <text x="365" y="114" text-anchor="middle" font-size="9" fill="#666">sharding/atomic</text>
+  <text x="365" y="128" text-anchor="middle" font-size="9" fill="#666">SoA/对齐</text>
+  <line x1="420" y1="100" x2="445" y2="100" stroke="#999" stroke-width="2" marker-end="url(#of1)"/>
+  <rect x="450" y="60" width="110" height="80" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" rx="6"/>
+  <text x="505" y="82" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">4. 验证</text>
+  <text x="505" y="100" text-anchor="middle" font-size="10" fill="#666">Benchmark对比</text>
+  <text x="505" y="115" text-anchor="middle" font-size="10" fill="#666">pprof确认</text>
+  <path d="M 505 140 Q 505 200 280 200 Q 85 200 85 140" fill="none" stroke="#999" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#of1)"/>
+  <text x="280" y="195" text-anchor="middle" font-size="11" fill="#999">迭代</text>
+  <text x="280" y="250" text-anchor="middle" font-size="12" fill="#666">先profile后优化，数据驱动决策</text>
+  <defs>
+    <marker id="of1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#999"/></marker>
+  </defs>
+</svg>

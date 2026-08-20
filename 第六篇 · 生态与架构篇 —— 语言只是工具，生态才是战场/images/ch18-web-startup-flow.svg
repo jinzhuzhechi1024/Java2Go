@@ -1,0 +1,35 @@
+<svg width="560" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">Web 服务启动流程对比</text>
+  <line x1="280" y1="45" x2="280" y2="375" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="140" y="65" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#E76F00">Spring Boot</text>
+  <rect x="60" y="80" width="160" height="38" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="6"/>
+  <text x="140" y="104" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">main() 启动</text>
+  <line x1="140" y1="118" x2="140" y2="138" stroke="#E76F00" stroke-width="1.5" marker-end="url(#arrO)"/>
+  <rect x="60" y="140" width="160" height="38" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="6"/>
+  <text x="140" y="164" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">IoC 容器初始化</text>
+  <line x1="140" y1="178" x2="140" y2="198" stroke="#E76F00" stroke-width="1.5" marker-end="url(#arrO)"/>
+  <rect x="60" y="200" width="160" height="38" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="6"/>
+  <text x="140" y="224" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">注解扫描 + 自动配置</text>
+  <line x1="140" y1="238" x2="140" y2="258" stroke="#E76F00" stroke-width="1.5" marker-end="url(#arrO)"/>
+  <rect x="60" y="260" width="160" height="38" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="6"/>
+  <text x="140" y="284" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">Bean 装配 + AOP 代理</text>
+  <line x1="140" y1="298" x2="140" y2="318" stroke="#E76F00" stroke-width="1.5" marker-end="url(#arrO)"/>
+  <rect x="60" y="320" width="160" height="38" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="6"/>
+  <text x="140" y="344" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">Tomcat 启动 → 就绪</text>
+  <text x="420" y="65" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#00ADD8">Go net/http</text>
+  <rect x="340" y="120" width="160" height="38" fill="#E0F7FA" stroke="#00ADD8" stroke-width="2" rx="6"/>
+  <text x="420" y="144" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">main() 启动</text>
+  <line x1="420" y1="158" x2="420" y2="198" stroke="#00ADD8" stroke-width="1.5" marker-end="url(#arrB)"/>
+  <rect x="340" y="200" width="160" height="38" fill="#E0F7FA" stroke="#00ADD8" stroke-width="2" rx="6"/>
+  <text x="420" y="224" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">注册 Handler 函数</text>
+  <line x1="420" y1="238" x2="420" y2="278" stroke="#00ADD8" stroke-width="1.5" marker-end="url(#arrB)"/>
+  <rect x="340" y="280" width="160" height="38" fill="#E0F7FA" stroke="#00ADD8" stroke-width="2" rx="6"/>
+  <text x="420" y="304" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">ListenAndServe → 就绪</text>
+  <text x="140" y="370" text-anchor="middle" font-size="11" fill="#E76F00">启动 ~3 秒 | 内存 ~250MB</text>
+  <text x="420" y="370" text-anchor="middle" font-size="11" fill="#00ADD8">启动 ~10ms | 内存 ~15MB</text>
+  <defs>
+    <marker id="arrO" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#E76F00"/></marker>
+    <marker id="arrB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#00ADD8"/></marker>
+  </defs>
+</svg>

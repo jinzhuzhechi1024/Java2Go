@@ -1,0 +1,35 @@
+<svg width="560" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">Go 运行时架构</text>
+  <rect x="180" y="50" width="200" height="40" fill="#E3F2FD" stroke="#333" stroke-width="1.5" rx="6"/>
+  <text x="280" y="75" text-anchor="middle" font-size="13" fill="#333">Go 源代码</text>
+  <line x1="280" y1="90" x2="280" y2="110" stroke="#333" stroke-width="1.5" marker-end="url(#rt1)"/>
+  <rect x="170" y="112" width="220" height="40" fill="#FFF3E0" stroke="#333" stroke-width="1.5" rx="6"/>
+  <text x="280" y="137" text-anchor="middle" font-size="13" fill="#333">编译器 → 静态二进制</text>
+  <line x1="280" y1="152" x2="280" y2="172" stroke="#333" stroke-width="1.5" marker-end="url(#rt1)"/>
+  <rect x="60" y="174" width="440" height="180" fill="#F5F5F5" stroke="#333" stroke-width="2" rx="8"/>
+  <text x="280" y="194" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Go Runtime（嵌入二进制内）</text>
+  <rect x="80" y="205" width="120" height="55" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="140" y="227" text-anchor="middle" font-size="12" fill="#333">GMP 调度器</text>
+  <text x="140" y="245" text-anchor="middle" font-size="10" fill="#666">Goroutine 队列</text>
+  <rect x="220" y="205" width="120" height="55" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="280" y="227" text-anchor="middle" font-size="12" fill="#333">内存分配器</text>
+  <text x="280" y="245" text-anchor="middle" font-size="10" fill="#666">TCMalloc 风格</text>
+  <rect x="360" y="205" width="120" height="55" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="420" y="227" text-anchor="middle" font-size="12" fill="#333">垃圾回收器</text>
+  <text x="420" y="245" text-anchor="middle" font-size="10" fill="#666">三色标记并发</text>
+  <rect x="80" y="275" width="120" height="55" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="297" text-anchor="middle" font-size="12" fill="#333">netpoller</text>
+  <text x="140" y="315" text-anchor="middle" font-size="10" fill="#666">网络 I/O</text>
+  <rect x="220" y="275" width="120" height="55" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="280" y="297" text-anchor="middle" font-size="12" fill="#333">Channel</text>
+  <text x="280" y="315" text-anchor="middle" font-size="10" fill="#666">CSP 通信</text>
+  <rect x="360" y="275" width="120" height="55" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="420" y="297" text-anchor="middle" font-size="12" fill="#333">Context</text>
+  <text x="420" y="315" text-anchor="middle" font-size="10" fill="#666">取消传播</text>
+  <rect x="180" y="345" width="200" height="35" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" rx="6"/>
+  <text x="280" y="367" text-anchor="middle" font-size="12" fill="#333">操作系统 syscalls</text>
+  <defs>
+    <marker id="rt1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#333"/></marker>
+  </defs>
+</svg>

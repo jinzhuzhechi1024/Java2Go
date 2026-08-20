@@ -1,0 +1,35 @@
+<svg width="560" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">并发模型：CSP vs 共享内存</text>
+  <line x1="280" y1="42" x2="280" y2="380" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="140" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#E76F00">Java 共享内存+锁</text>
+  <rect x="60" y="85" width="80" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="100" y="108" text-anchor="middle" font-size="11" fill="#333">Thread A</text>
+  <rect x="140" y="85" width="80" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="180" y="108" text-anchor="middle" font-size="11" fill="#333">Thread B</text>
+  <line x1="100" y1="121" x2="140" y2="160" stroke="#E76F00" stroke-width="1.5" marker-end="url(#ca1)"/>
+  <line x1="180" y1="121" x2="140" y2="160" stroke="#E76F00" stroke-width="1.5" marker-end="url(#ca1)"/>
+  <rect x="80" y="165" width="120" height="40" fill="#FFE0B2" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="140" y="183" text-anchor="middle" font-size="11" fill="#333">🔒 Mutex</text>
+  <text x="140" y="198" text-anchor="middle" font-size="10" fill="#666">shared int count</text>
+  <text x="140" y="245" text-anchor="middle" font-size="12" fill="#E76F00">通过锁保护共享变量</text>
+  <text x="140" y="270" text-anchor="middle" font-size="11" fill="#D32F2F">⚠️ 竞争、死锁风险</text>
+  <text x="420" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#00ADD8">Go CSP (Channel)</text>
+  <rect x="330" y="85" width="80" height="36" fill="#E0F7FA" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="370" y="108" text-anchor="middle" font-size="10" fill="#333">Goroutine A</text>
+  <text x="370" y="120" text-anchor="middle" font-size="9" fill="#00ADD8">(发送)</text>
+  <line x1="410" y1="103" x2="450" y2="103" stroke="#00ADD8" stroke-width="2" marker-end="url(#ca2)"/>
+  <rect x="350" y="140" width="140" height="40" fill="#B2EBF2" stroke="#00ADD8" stroke-width="2" rx="20"/>
+  <text x="420" y="158" text-anchor="middle" font-size="13" fill="#333">chan int</text>
+  <text x="420" y="173" text-anchor="middle" font-size="9" fill="#666">通信管道</text>
+  <rect x="430" y="85" width="80" height="36" fill="#E0F7FA" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="470" y="108" text-anchor="middle" font-size="10" fill="#333">Goroutine B</text>
+  <text x="470" y="120" text-anchor="middle" font-size="9" fill="#00ADD8">(接收)</text>
+  <line x1="430" y1="140" x2="390" y2="140" stroke="#00ADD8" stroke-width="2" marker-end="url(#ca2)" transform="translate(40,0)"/>
+  <text x="420" y="245" text-anchor="middle" font-size="12" fill="#00ADD8">通过Channel传递所有权</text>
+  <text x="420" y="270" text-anchor="middle" font-size="11" fill="#00ADD8">✓ 无需锁，无竞争</text>
+  <defs>
+    <marker id="ca1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#E76F00"/></marker>
+    <marker id="ca2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#00ADD8"/></marker>
+  </defs>
+</svg>

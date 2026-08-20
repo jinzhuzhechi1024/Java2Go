@@ -1,0 +1,31 @@
+<svg width="560" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">Context：取消信号的传播树</text>
+  <rect x="190" y="50" width="180" height="36" fill="#E3F2FD" stroke="#333" stroke-width="1.5" rx="6"/>
+  <text x="280" y="73" text-anchor="middle" font-size="12" fill="#333">context.Background()</text>
+  <line x1="220" y1="86" x2="150" y2="120" stroke="#666" stroke-width="1.5"/>
+  <line x1="340" y1="86" x2="410" y2="120" stroke="#666" stroke-width="1.5"/>
+  <rect x="70" y="120" width="160" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="150" y="141" text-anchor="middle" font-size="10" fill="#333">WithCancel(bg)</text>
+  <rect x="330" y="120" width="160" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="410" y="141" text-anchor="middle" font-size="10" fill="#333">WithTimeout(bg, 5s)</text>
+  <line x1="110" y1="152" x2="90" y2="185" stroke="#666" stroke-width="1.5"/>
+  <line x1="190" y1="152" x2="210" y2="185" stroke="#666" stroke-width="1.5"/>
+  <line x1="410" y1="152" x2="410" y2="185" stroke="#666" stroke-width="1.5"/>
+  <rect x="30" y="185" width="120" height="28" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="90" y="204" text-anchor="middle" font-size="10" fill="#333">WithCancel(ctx)</text>
+  <rect x="170" y="185" width="120" height="28" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="230" y="204" text-anchor="middle" font-size="10" fill="#333">WithValue(ctx)</text>
+  <rect x="350" y="185" width="120" height="28" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="410" y="204" text-anchor="middle" font-size="10" fill="#333">WithDeadline(ctx)</text>
+  <line x1="150" y1="100" x2="150" y2="118" stroke="#D32F2F" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#cta)"/>
+  <text x="50" y="110" font-size="11" fill="#D32F2F">cancel()</text>
+  <line x1="90" y1="213" x2="90" y2="230" stroke="#D32F2F" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#cta)"/>
+  <line x1="230" y1="213" x2="230" y2="230" stroke="#D32F2F" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#cta)"/>
+  <line x1="410" y1="213" x2="410" y2="230" stroke="#D32F2F" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#cta)"/>
+  <text x="280" y="270" text-anchor="middle" font-size="13" fill="#D32F2F">调用 cancel() → 所有子Context自动取消</text>
+  <text x="280" y="295" text-anchor="middle" font-size="11" fill="#666">取消信号沿树向下级联传播</text>
+  <defs>
+    <marker id="cta" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#D32F2F"/></marker>
+  </defs>
+</svg>

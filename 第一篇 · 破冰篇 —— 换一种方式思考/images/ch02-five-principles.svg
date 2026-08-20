@@ -1,0 +1,38 @@
+<svg width="560" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">五条思维密码：从Java习惯到Go哲学</text>
+  <line x1="280" y1="42" x2="280" y2="380" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="140" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#E76F00">Java 习惯</text>
+  <text x="420" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#00ADD8">Go 哲学</text>
+  <rect x="40" y="80" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="103" text-anchor="middle" font-size="12" fill="#333">显式配置(注解+XML)</text>
+  <line x1="240" y1="98" x2="320" y2="98" stroke="#999" stroke-width="1.5" marker-end="url(#ar1)"/>
+  <rect x="320" y="80" width="200" height="36" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="420" y="103" text-anchor="middle" font-size="12" fill="#333">显式优于隐式</text>
+  <rect x="40" y="130" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="153" text-anchor="middle" font-size="12" fill="#333">继承体系(extends)</text>
+  <line x1="240" y1="148" x2="320" y2="148" stroke="#999" stroke-width="1.5" marker-end="url(#ar1)"/>
+  <rect x="320" y="130" width="200" height="36" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="420" y="153" text-anchor="middle" font-size="12" fill="#333">组合优于继承</text>
+  <rect x="40" y="180" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="203" text-anchor="middle" font-size="12" fill="#333">共享内存+锁</text>
+  <line x1="240" y1="198" x2="320" y2="198" stroke="#999" stroke-width="1.5" marker-end="url(#ar1)"/>
+  <rect x="320" y="180" width="200" height="36" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="420" y="203" text-anchor="middle" font-size="12" fill="#333">通信优于共享</text>
+  <rect x="40" y="230" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="253" text-anchor="middle" font-size="12" fill="#333">聪明写法(Stream)</text>
+  <line x1="240" y1="248" x2="320" y2="248" stroke="#999" stroke-width="1.5" marker-end="url(#ar1)"/>
+  <rect x="320" y="230" width="200" height="36" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="420" y="253" text-anchor="middle" font-size="12" fill="#333">简单优于聪明</text>
+  <rect x="40" y="280" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="140" y="303" text-anchor="middle" font-size="12" fill="#333">大杂烩(全栈框架)</text>
+  <line x1="240" y1="298" x2="320" y2="298" stroke="#999" stroke-width="1.5" marker-end="url(#ar1)"/>
+  <rect x="320" y="280" width="200" height="36" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="420" y="303" text-anchor="middle" font-size="12" fill="#333">正交组合</text>
+  <text x="280" y="360" text-anchor="middle" font-size="12" fill="#666">五条原则 = Go所有"奇怪"设计的统一逻辑</text>
+  <defs>
+    <marker id="ar1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>

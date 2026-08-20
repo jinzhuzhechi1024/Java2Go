@@ -1,0 +1,33 @@
+<svg width="560" height="380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="380" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">中间件模型对比</text>
+  <line x1="280" y1="42" x2="280" y2="360" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="140" y="62" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Spring Filter 链</text>
+  <rect x="70" y="80" width="140" height="32" fill="#FFF3E0" stroke="#E76F00" rx="5"/>
+  <text x="140" y="100" text-anchor="middle" font-size="11" fill="#333">Filter1.doFilter()</text>
+  <line x1="140" y1="112" x2="140" y2="128" stroke="#E76F00" stroke-width="1.5" marker-end="url(#aO)"/>
+  <rect x="70" y="130" width="140" height="32" fill="#FFF3E0" stroke="#E76F00" rx="5"/>
+  <text x="140" y="150" text-anchor="middle" font-size="11" fill="#333">Filter2.doFilter()</text>
+  <line x1="140" y1="162" x2="140" y2="178" stroke="#E76F00" stroke-width="1.5" marker-end="url(#aO)"/>
+  <rect x="70" y="180" width="140" height="32" fill="#FFF3E0" stroke="#E76F00" rx="5"/>
+  <text x="140" y="200" text-anchor="middle" font-size="11" fill="#333">Filter3.doFilter()</text>
+  <line x1="140" y1="212" x2="140" y2="228" stroke="#E76F00" stroke-width="1.5" marker-end="url(#aO)"/>
+  <rect x="70" y="230" width="140" height="32" fill="#FFF3E0" stroke="#E76F00" rx="5"/>
+  <text x="140" y="250" text-anchor="middle" font-size="11" fill="#333">Controller</text>
+  <text x="140" y="290" text-anchor="middle" font-size="10" fill="#999">响应逆序返回</text>
+  <text x="420" y="62" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#00ADD8">Go 洋葱模型</text>
+  <ellipse cx="420" cy="200" rx="130" ry="120" fill="none" stroke="#00ADD8" stroke-width="2"/>
+  <text x="420" y="95" text-anchor="middle" font-size="11" fill="#00ADD8">Middleware1 入</text>
+  <ellipse cx="420" cy="205" rx="95" ry="85" fill="none" stroke="#00ADD8" stroke-width="2"/>
+  <text x="420" y="135" text-anchor="middle" font-size="11" fill="#00ADD8">Middleware2 入</text>
+  <ellipse cx="420" cy="210" rx="60" ry="55" fill="none" stroke="#00ADD8" stroke-width="2"/>
+  <text x="420" y="175" text-anchor="middle" font-size="11" fill="#00ADD8">Middleware3 入</text>
+  <rect x="385" y="195" width="70" height="30" fill="#E0F7FA" stroke="#00ADD8" rx="5"/>
+  <text x="420" y="214" text-anchor="middle" font-size="11" fill="#333">Handler</text>
+  <text x="420" y="245" text-anchor="middle" font-size="11" fill="#00ADD8">Middleware3 出</text>
+  <text x="420" y="285" text-anchor="middle" font-size="11" fill="#00ADD8">Middleware1 出</text>
+  <text x="280" y="350" text-anchor="middle" font-size="12" fill="#D32F2F">⚡ 洋葱模型用 c.Next() 分割入站/出站，一个函数搞定两阶段</text>
+  <defs>
+    <marker id="aO" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#E76F00"/></marker>
+  </defs>
+</svg>

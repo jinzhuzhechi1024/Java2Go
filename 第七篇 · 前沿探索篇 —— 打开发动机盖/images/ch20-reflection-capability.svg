@@ -1,0 +1,35 @@
+<svg width="560" height="380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="380" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">反射能力范围对比</text>
+  <line x1="280" y1="42" x2="280" y2="360" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="140" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#E76F00">Java Reflection</text>
+  <rect x="50" y="75" width="180" height="30" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="140" y="95" text-anchor="middle" font-size="12" fill="#333">动态加载任意类</text>
+  <rect x="50" y="112" width="180" height="30" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="140" y="132" text-anchor="middle" font-size="12" fill="#333">突破 private 访问</text>
+  <rect x="50" y="149" width="180" height="30" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="140" y="169" text-anchor="middle" font-size="12" fill="#333">运行时注解扫描</text>
+  <rect x="50" y="186" width="180" height="30" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="140" y="206" text-anchor="middle" font-size="12" fill="#333">动态代理 (AOP)</text>
+  <rect x="50" y="223" width="180" height="30" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="140" y="243" text-anchor="middle" font-size="12" fill="#333">修改 final 字段</text>
+  <rect x="50" y="260" width="180" height="30" fill="#FFE0B2" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="140" y="280" text-anchor="middle" font-size="12" fill="#D32F2F">⚠️ 能力强但危险</text>
+  <text x="140" y="320" text-anchor="middle" font-size="11" fill="#E76F00">Spring / Jackson / JUnit</text>
+  <text x="140" y="338" text-anchor="middle" font-size="11" fill="#E76F00">全部深度依赖反射</text>
+  <text x="420" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#00ADD8">Go reflect</text>
+  <rect x="330" y="75" width="180" height="30" fill="#E0F7FA" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="420" y="95" text-anchor="middle" font-size="12" fill="#333">类型检查 (TypeOf)</text>
+  <rect x="330" y="112" width="180" height="30" fill="#E0F7FA" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="420" y="132" text-anchor="middle" font-size="12" fill="#333">读取 struct tag</text>
+  <rect x="330" y="149" width="180" height="30" fill="#E0F7FA" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="420" y="169" text-anchor="middle" font-size="12" fill="#333">动态方法调用</text>
+  <rect x="330" y="186" width="180" height="30" fill="#E3F2FD" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="420" y="206" text-anchor="middle" font-size="12" fill="#666">不能反射未导出字段</text>
+  <rect x="330" y="223" width="180" height="30" fill="#E3F2FD" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="420" y="243" text-anchor="middle" font-size="12" fill="#666">无动态代理</text>
+  <rect x="330" y="260" width="180" height="30" fill="#B2EBF2" stroke="#00ADD8" stroke-width="2" rx="5"/>
+  <text x="420" y="280" text-anchor="middle" font-size="12" fill="#00ADD8">✓ 能力克制且安全</text>
+  <text x="420" y="320" text-anchor="middle" font-size="11" fill="#00ADD8">encoding/json / fmt</text>
+  <text x="420" y="338" text-anchor="middle" font-size="11" fill="#00ADD8">鼓励用代码生成替代</text>
+</svg>

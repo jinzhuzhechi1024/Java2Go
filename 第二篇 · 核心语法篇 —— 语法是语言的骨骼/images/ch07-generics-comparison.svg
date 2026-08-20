@@ -1,0 +1,31 @@
+<svg width="560" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">泛型实现：单态化 vs 类型擦除</text>
+  <line x1="280" y1="42" x2="280" y2="380" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="140" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#00ADD8">Go 单态化</text>
+  <rect x="50" y="75" width="180" height="36" fill="#E3F2FD" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="140" y="98" text-anchor="middle" font-size="10" fill="#333">func Max[T int|float64](a,b T) T</text>
+  <line x1="140" y1="111" x2="140" y2="130" stroke="#00ADD8" stroke-width="1.5" marker-end="url(#ga1)"/>
+  <rect x="50" y="135" width="180" height="32" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="140" y="156" text-anchor="middle" font-size="11" fill="#333">func Max_int(a,b int) int</text>
+  <rect x="50" y="175" width="180" height="32" fill="#E0F7FA" stroke="#00ADD8" stroke-width="1.5" rx="5"/>
+  <text x="140" y="196" text-anchor="middle" font-size="11" fill="#333">func Max_float64(a,b f64) f64</text>
+  <text x="140" y="240" text-anchor="middle" font-size="11" fill="#00ADD8">✓ 类型安全（编译期检查）</text>
+  <text x="140" y="260" text-anchor="middle" font-size="11" fill="#D32F2F">✗ 代码膨胀（多份副本）</text>
+  <text x="140" y="285" text-anchor="middle" font-size="11" fill="#666">无装箱开销</text>
+  <text x="420" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#E76F00">Java 类型擦除</text>
+  <rect x="330" y="75" width="180" height="36" fill="#E3F2FD" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="420" y="98" text-anchor="middle" font-size="10" fill="#333">public &lt;T&gt; T max(T a, T b)</text>
+  <line x1="420" y1="111" x2="420" y2="130" stroke="#E76F00" stroke-width="1.5" marker-end="url(#ga2)"/>
+  <rect x="330" y="135" width="180" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="420" y="156" text-anchor="middle" font-size="11" fill="#333">max(Object a, Object b)</text>
+  <rect x="330" y="175" width="180" height="32" fill="#FFE0B2" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="420" y="196" text-anchor="middle" font-size="10" fill="#D32F2F">⚠️ (Integer) max(1, 2)</text>
+  <text x="420" y="240" text-anchor="middle" font-size="11" fill="#D32F2F">✗ 运行时cast</text>
+  <text x="420" y="260" text-anchor="middle" font-size="11" fill="#00ADD8">✓ 代码紧凑（一份）</text>
+  <text x="420" y="285" text-anchor="middle" font-size="11" fill="#666">有装箱开销</text>
+  <defs>
+    <marker id="ga1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#00ADD8"/></marker>
+    <marker id="ga2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#E76F00"/></marker>
+  </defs>
+</svg>
